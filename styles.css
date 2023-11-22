@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #7b8cac; /* Color de fondo oscuro */
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+img{
+   width: 300px;
+   height: 100px;
+}
+.datosEstudiantes {
+    text-align: center;
+    margin-top: 20px; /* Ajuste del margen superior */
+}
+.calculadora {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    max-width: 400px; /* Ajuste del ancho máximo */
+    margin: 20px auto; /* Ajuste del margen para centrar verticalmente y horizontalmente */
+    padding: 30px; /* Ajuste del relleno */
+    background-color: #091731; /* Color de fondo de la calculadora */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para un aspecto más elevado */
+}
+
+.pantalla {
+    grid-column: span 4;
+    height: 40px;
+    background-color: rgb(120, 123, 129); /* Color de fondo de la pantalla */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 20px; /* Ajuste del relleno */
+    font-size: 1.5em;
+    color: #ffffff; /* Color del texto en la pantalla */
+    border-radius: 15px; /* Bordes redondeados */
+    margin-bottom: 10px; /* Espacio entre la pantalla y los botones */
+}
+
+button {
+    height: 40px;
+    background-color: #3b7585; /* Color de fondo de los botones */
+    color: #282c34; /* Color del texto en los botones */
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición suave al pasar el ratón */
+}
+
+button:hover {
+    background-color: #4fa3d1; /* Cambio de color al pasar el ratón sobre los botones */
+}
